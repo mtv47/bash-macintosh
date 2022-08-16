@@ -14,6 +14,9 @@ sudo scutil --set HostName "macintosh"
 #Enable Key Repeat
 - defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+#Disable Disk Warning
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
+
 #Basic.sh
 sudo bash brew.sh
 sudo bash mas.sh
