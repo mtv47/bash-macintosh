@@ -56,3 +56,9 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false && k
 
 #Don't offer new disks for Time Machine to backup
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true && killall SystemUIServer
+
+#Mac App Store update check frequency to 2
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 2 && killall SystemUIServer
+
+#Expand print dialog by default 
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true && killall SystemUIServer
