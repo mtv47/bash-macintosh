@@ -1,7 +1,16 @@
 #!/bin/bash
-brew install chezmoi
-brew install --cask iterm2
+
+#Basic
+brew install --cask brave-browser
+brew install --cask kitty
 brew install --cask coconutbattery
+brew install --cask turbo-boost-switcher
 brew install --cask amethyst
-brew install --cask discord
-brew install --cask telegram-desktop
+
+#Torrenting
+brew install --cask protonvpn
+brew install --cask deluge
+
+#Code
+brew install --cask github
+brew install --cask visual-studio-code
