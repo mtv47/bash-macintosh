@@ -17,6 +17,9 @@ sudo scutil --set HostName "macintosh"
 #Disable Disk Warning
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
 
+#Change Screenshot Default to JPG
+defaults write com.apple.screencapture type jpg
+
 #Basic.sh
 sudo bash brew.sh
 sudo bash mas.sh
