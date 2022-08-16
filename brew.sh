@@ -9,6 +9,7 @@ brew install --cask amethyst
 brew install --cask protonmail-bridge
 brew install --cask appcleaner
 brew install --cask balenaetcher
+brew install --cask tailscale
 
 #Basic installs
 brew install htop
