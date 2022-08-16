@@ -7,6 +7,7 @@ brew install --cask coconutbattery
 brew install --cask turbo-boost-switcher
 brew install --cask amethyst
 brew install --cask protonmail-bridge
+brew install --cask appcleaner
 
 #Basic installs
 brew install htop
