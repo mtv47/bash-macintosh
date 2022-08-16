@@ -10,6 +10,8 @@ brew install --cask protonmail-bridge
 brew install --cask appcleaner
 brew install --cask balenaetcher
 brew install --cask tailscale
+brew install --cask imageoptim
+brew install --cask dropzone
 
 #Basic installs
 brew install htop
