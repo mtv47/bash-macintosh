@@ -11,3 +11,6 @@ mas install 747648890
 
 #Xcode
 mas install 497799835
+
+#iStat Menus
+mas install 1319778037
