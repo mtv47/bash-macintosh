@@ -15,4 +15,4 @@ sudo scutil --set HostName "macintosh"
 - defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 #Basic.sh
-sudo bash basic.sh
+sudo bash brew.sh
