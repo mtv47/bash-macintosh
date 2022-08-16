@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#Setup
-mas signin --dialog m.tymchenko@pm.me
-
 #Bitwarden
 mas install 1352778147
 
