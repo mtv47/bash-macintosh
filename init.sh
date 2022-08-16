@@ -16,3 +16,4 @@ sudo scutil --set HostName "macintosh"
 
 #Basic.sh
 sudo bash brew.sh
+sudo bash mas.sh
