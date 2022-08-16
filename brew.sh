@@ -12,6 +12,7 @@ brew install --cask balenaetcher
 brew install --cask tailscale
 brew install --cask imageoptim
 brew install --cask dropzone
+brew install --cask vlc
 
 #Basic installs
 brew install htop
