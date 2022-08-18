@@ -42,7 +42,8 @@ then
 
     casks=("brave-browser" "kitty" "coconutbattery" "amethyst" "turbo-boost-switcher" 
     "vlc" "appcleaner" "balenaetcher" "imageoptim" "dropzone" "tailscale"
-    "protonvpn" "protonmail-bridge" "youtube-dl" "deluge" "github" "visual-studio-code")
+    "protonvpn" "protonmail-bridge" "youtube-dl" "deluge" "github" 
+    "visual-studio-code")
 
     for cask in "${casks[@]}"
     do
@@ -50,8 +51,13 @@ then
         read -s -n 1 answer
         if [[ $answer == "y" || $answer == "" ]]
         then
-            brew install --cask $cask
-            echo "Installed $cask"
+
+            if brew list $cask &>/dev/null; then
+                echo "$cask is already installed"
+            else
+                brew install --cask $cask
+                echo "Installed $cask"
+            fi
             echo ""
         fi
     done
