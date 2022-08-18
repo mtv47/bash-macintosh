@@ -47,19 +47,19 @@ then
 
     for cask in "${casks[@]}"
     do
-        echo "Do you want to install $cask? (Y/n)"
-        read -s -n 1 answer
-        if [[ $answer == "y" || $answer == "" ]]
-        then
 
-            if brew list $cask &>/dev/null; then
-                echo "$cask is already installed"
-            else
+        if brew list $cask &>/dev/null; then
+            echo "$cask is already installed"
+        else
+            echo "Do you want to install $cask? (Y/n)"
+            read -s -n 1 answer
+            if [[ $answer == "y" || $answer == "" ]]
+            then
                 brew install --cask $cask
-                echo "Installed $cask"
             fi
             echo ""
         fi
+
     done
 
 fi
