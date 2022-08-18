@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "Set the mac name"
+sudo scutil --set ComputerName "macintosh"
+sudo scutil --set LocalHostName "macintosh"
+sudo scutil --set HostName "macintosh"
+echo ""
+
 echo "Show Path in Finder"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
 echo ""
@@ -82,4 +88,7 @@ echo ""
 
 echo "Expand print dialog by default"
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true && killall SystemUIServer
+echo ""
+
+echo "Finished doing defaults"
 echo ""

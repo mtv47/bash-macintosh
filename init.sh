@@ -1,14 +1,41 @@
 #!/bin/bash
 
-#Set the mac name
-sudo scutil --set ComputerName "macintosh"
-sudo scutil --set LocalHostName "macintosh"
-sudo scutil --set HostName "macintosh"
 
-#Install xcode-select
-xcode-select —install
+cat << "EOF"
+           .:'
+      __ :'__
+   .'`__`-'__``.
+  :__________.-'
+  :_________:
+   :_________`-.
+    `.__.-.__.'
+EOF
 
-#Basic.sh
-sudo bash defaults.sh
-sudo bash brew.sh
-sudo bash mas.sh
+echo ""
+echo "Script by mtv47 to set up a mac for development/personal use"
+echo ""
+
+echo "Please enter your choice: "
+options=("Set up settings and defaults" 
+"Install brew and apps from brew" 
+"Install apps from mas" 
+"Quit")
+
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Set up settings and defaults")
+            sudo bash defaults.sh
+            ;;
+        "Install brew and apps from brew")
+            sudo bash brew.sh
+            ;;
+        "Install apps from mas")
+            sudo bash mas.sh
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
