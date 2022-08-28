@@ -24,7 +24,7 @@ then
     echo ""
 
     packages=("htop" "wget" "git" "speedtest-cli" "mas"
-    "docker" "docker-compose")
+    "docker-compose")
 
     for package in "${packages[@]}"
     do
@@ -44,7 +44,7 @@ then
     casks=("brave-browser" "kitty" "coconutbattery" "amethyst" "turbo-boost-switcher" 
     "vlc" "appcleaner" "balenaetcher" "imageoptim" "dropzone" "tailscale"
     "protonvpn" "protonmail-bridge" "youtube-dl" "deluge" "github" 
-    "visual-studio-code" "spotify")
+    "visual-studio-code" "spotify" "docker")
 
     for cask in "${casks[@]}"
     do
