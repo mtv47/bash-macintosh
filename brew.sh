@@ -23,7 +23,8 @@ then
     echo "Installing Homebrew packages"
     echo ""
 
-    packages=("htop" "wget" "git" "speedtest-cli" "mas")
+    packages=("htop" "wget" "git" "speedtest-cli" "mas"
+    "docker" "docker-compose")
 
     for package in "${packages[@]}"
     do
