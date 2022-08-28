@@ -37,7 +37,6 @@ wget https://raw.githubusercontent.com/mtv47/bash-macintosh/main/bootstrap.sh -O
 * Telegram
 * Xcode
 * iStat Menus
-* Spotify
 
 ## Brew CLI
 * htop
@@ -67,7 +66,7 @@ wget https://raw.githubusercontent.com/mtv47/bash-macintosh/main/bootstrap.sh -O
 * github
 * visual-studio-code
 * spotify
-brew install --cask docker
+* docker
 
 ## Requirements
 * MacOS
