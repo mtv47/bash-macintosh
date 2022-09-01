@@ -1,9 +1,10 @@
 #!/bin/bash
 
-echo "Set the mac name"
-sudo scutil --set ComputerName "macintosh"
-sudo scutil --set LocalHostName "macintosh"
-sudo scutil --set HostName "macintosh"
+echo "Which name do you want to set for this mac ?"
+read name
+sudo scutil --set ComputerName $name
+sudo scutil --set LocalHostName $name
+sudo scutil --set HostName $name
 echo ""
 
 echo "Show Path in Finder"
