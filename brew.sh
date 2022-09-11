@@ -44,7 +44,7 @@ then
     casks=("brave-browser" "kitty" "coconutbattery" "amethyst" "turbo-boost-switcher" 
     "vlc" "appcleaner" "balenaetcher" "imageoptim" "dropzone" "tailscale"
     "protonvpn" "protonmail-bridge" "youtube-dl" "deluge" "github" 
-    "visual-studio-code" "spotify" "docker" "librewolf" "obsidian")
+    "visual-studio-code" "spotify" "docker" "librewolf" "obsidian" "jellyfin-media-player")
 
     for cask in "${casks[@]}"
     do
