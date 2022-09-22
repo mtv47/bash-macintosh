@@ -80,4 +80,20 @@ then
             echo ""
     fi
 
+    echo ""
+    echo "Installing miniconda"
+    echo ""
+
+    if brew list miniconda &>/dev/null; then
+        echo "Miniconda is already installed"
+    else
+        echo "Do you want to install miniconda? (Y/n)"
+            read -s -n 1 answer
+            if [[ $answer == "y" || $answer == "" ]]
+            then
+                brew install --cask miniconda
+            fi
+            echo ""
+    fi
+
 fi

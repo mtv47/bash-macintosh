@@ -18,7 +18,8 @@ echo ""
 echo "Please enter your choice: "
 options=("Set up settings and defaults" 
 "Install brew and apps from brew" 
-"Install apps from mas" 
+"Install apps from mas"
+"Install Miniconda packages"
 "Quit")
 
 select opt in "${options[@]}"
@@ -32,6 +33,9 @@ do
             ;;
         "Install apps from mas")
             sudo bash mas.sh
+            ;;
+        "Install Miniconda packages")
+            bash conda.sh
             ;;
         "Quit")
             break
