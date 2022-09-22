@@ -44,7 +44,7 @@ then
     casks=("brave-browser" "kitty" "coconutbattery" "amethyst" "turbo-boost-switcher" 
     "vlc" "appcleaner" "balenaetcher" "imageoptim" "dropzone" "tailscale"
     "protonvpn" "protonmail-bridge" "youtube-dl" "deluge" "github" 
-    "visual-studio-code" "spotify" "docker" "librewolf" "obsidian" "jellyfin-media-player")
+    "visual-studio-code" "docker" "librewolf" "obsidian" "jellyfin-media-player")
 
     for cask in "${casks[@]}"
     do
@@ -62,5 +62,22 @@ then
         fi
 
     done
+
+
+    echo ""
+    echo "Installing Scala"
+    echo ""
+
+    if brew list scala &>/dev/null; then
+        echo "Scala is already installed"
+    else
+        echo "Do you want to install scala? (Y/n)"
+            read -s -n 1 answer
+            if [[ $answer == "y" || $answer == "" ]]
+            then
+                brew install coursier/formulas/coursier && cs setup
+            fi
+            echo ""
+    fi
 
 fi
