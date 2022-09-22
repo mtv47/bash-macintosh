@@ -20,6 +20,7 @@ options=("Set up settings and defaults"
 "Install brew and apps from brew" 
 "Install apps from mas"
 "Install Miniconda packages"
+"Start a jupyter notebook server"
 "Quit")
 
 select opt in "${options[@]}"
@@ -36,6 +37,9 @@ do
             ;;
         "Install Miniconda packages")
             bash conda.sh
+            ;;
+        "Start a jupyter notebook server")
+            jupyter notebook --no-browser --port=8888
             ;;
         "Quit")
             break
