@@ -41,7 +41,7 @@ then
     echo "Installing Homebrew casks"
     echo ""
 
-    casks=("brave-browser" "kitty" "coconutbattery" "amethyst" "turbo-boost-switcher" 
+    casks=("brave-browser" "iterm2" "coconutbattery" "amethyst" "turbo-boost-switcher" 
     "vlc" "appcleaner" "balenaetcher" "imageoptim" "dropzone" "tailscale"
     "protonvpn" "protonmail-bridge" "youtube-dl" "deluge" "github" 
     "visual-studio-code" "docker" "librewolf" "obsidian" "jellyfin-media-player" "flux")
