@@ -44,7 +44,7 @@ defaults write com.apple.dock mineffect -string "scale" && killall Dock
 echo ""
 
 echo "Set the location of screenshots to ~/Pictures"
-defaults write com.apple.screencapture location -string "$HOME/Pictures" && killall SystemUIServer
+defaults write com.apple.screencapture location -string "$HOME/Pictures/Screenshots" && killall SystemUIServer
 echo ""
 
 echo "Disable date in screenshots"
